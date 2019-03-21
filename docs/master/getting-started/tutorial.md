@@ -305,6 +305,9 @@ Then, we add additional type definitions that clearly define the shape of our da
 type Query{
     posts: [Post!]! @all
     post (id: Int! @eq): Post @find
+    users: [User] @all
+    user (id: Int! @eq): User @find
+
 }
 
 type User {
